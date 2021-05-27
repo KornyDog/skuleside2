@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { /*color of background image, and all text inside the body tag in html*/
+    background-image: url("Skulenettside_Content_Archive/repeatable_background.png");
+    color: silver;
+}
+
+.grid { /*grid defined in columns and rows and then laid out in an area at the bottom.*/
+        /*NOTE Adding another line requires another 1fr or corresponding in grid-template-rows.*/
+        /*SIX(6) Columns are defined, where FOUR(4) are main use, and TWO(2) are margins*/ 
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr 350px 350px 350px 350px 1fr;
+    grid-template-rows: auto 40px 1fr 60px;
+    grid-template-areas: 
+    ". title title title title ."
+    ". header2 content1 content1 content1 ."
+    ". sidebar1 content1 content1 content1 ."
+    ". footer footer footer footer .";
+    
+
+}
+
+.title { /*Customizes the big text at the top*/
+    grid-area: title;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.header1 { /*Customizes the text below the title*/
+    grid-area: header1;
+    text-align: center;
+}
+
+.header2 { /*Customizes the text below the title*/
+    grid-area: header2;
+    text-align: center;
+}
+.fagliste { /*Picture for the first hero section*/
+    grid-area: sidebar1;
+    text-align: center;
+    padding: 10px;
+}
+.content1 { /*Text for the first hero section*/
+    grid-area: content1;
+    display: grid;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+
+
+.sidebar2 { /*Picture for the second hero section*/
+    grid-area: sidebar2;
+    position: unset;
+    text-align: center;
+}
+.content2 { /*Text for the first hero section*/
+    grid-area: content2;
+    display: grid;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.trans0 {
+    display: inline-flex;
+    color: rgb(31, 31, 31);
+    padding: 140px 250px 0px 0px;
+    background-image: url("Skulenettside_Content_Archive/Camera1.png");
+}
+.trans0:hover {
+    background-image: url("Skulenettside_Content_Archive/Camera4.png");
+}
+
+
+.trans1 {
+    display: inline-flex;
+    color: rgb(31, 31, 31);
+    padding: 140px 250px 0px 0px;
+    background-image: url("Skulenettside_Content_Archive/Coding3.png");
+}
+.trans1:hover {
+    background-image: url("Skulenettside_Content_Archive/Coding4.png");
+}
+
+
+.trans2 {
+    display: inline-flex;
+    color: rgb(31, 31, 31);
+    padding: 140px 250px 0px 0px;
+    background-image: url("Skulenettside_Content_Archive/Network1.png");
+}
+.trans2:hover {
+    background-image: url("Skulenettside_Content_Archive/Network2.png");
+}
+
+
+.trans3 {
+    display: inline-flex;
+    color: rgb(31, 31, 31);
+    padding: 140px 250px 0px 0px;
+    background-image: url("Skulenettside_Content_Archive/YFF1.png");
+}
+.trans3:hover {
+    background-image: url("Skulenettside_Content_Archive/YFF2.png");
+}
+
+
+h1 {
+    font-size: x-large;
+    text-align: center;
+}
+
+
+
+
+
+/*These two can make every second line change color*/ 
+/*If left as equal colors these allow a customizable color difference between background and div elements*/
+.grid div:nth-child(even)  {
+    background-color: #111111;
+}
+.grid div:nth-child(odd)  {
+    background-color: #111111;
+}
