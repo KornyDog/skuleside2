@@ -76,7 +76,7 @@ body { /*color of background image, and all text inside the body tag in html*/
 }
 
 
-.trans0 {
+.trans0 { /* this and the one below make the buttons go from easily readable boxes, to stylized boxes when hovered over. Done for accessability's sake */
     display: inline-flex;
     color: rgb(31, 31, 31);
     padding: 140px 250px 0px 0px;

@@ -10,7 +10,7 @@ body { /*color of background image, and all text inside the body tag in html*/
 
 .grid { /*grid defined in columns and rows and then laid out in an area at the bottom.*/
         /*NOTE Adding another line requires another 1fr or corresponding in grid-template-rows.*/
-        /*SIX(6) Columns are defined, where FOUR(4) are main use, and TWO(2) are margins*/ 
+        /*SIX(6) Columns are defined, where FIVE(5) are main use, and TWO(2) are margins*/ 
     display: grid;
     grid-gap: 6px;
     grid-template-columns: 1fr 350px 350px 350px 350px 1fr;
@@ -25,10 +25,7 @@ body { /*color of background image, and all text inside the body tag in html*/
 
 }
 
-.homebutton {
-    grid-area: home;
-    text-align: center;
-}
+
 
 .title { /*Customizes the big text at the top*/
     grid-area: title;
@@ -36,16 +33,8 @@ body { /*color of background image, and all text inside the body tag in html*/
     text-align: center;
 }
 
-.header1 { /*Customizes the text below the title*/
-    grid-area: header1;
-    text-align: center;
-}
 
-.header2 { /*Customizes the text below the title*/
-    grid-area: header2;
-    text-align: center;
-}
-.sidebar1 { /*Picture for the first hero section*/
+.sidebar1 { /*Navigering*/
     grid-area: sidebar1;
     text-align: center;
     padding: 50px;
@@ -64,7 +53,10 @@ body { /*color of background image, and all text inside the body tag in html*/
     text-align: center;
 }
 
-
+.homebutton { /*Adds button to return you to the frontpage*/
+    grid-area: home;
+    text-align: center;
+}
 
 .sidebar2 { /*Picture for the second hero section*/
     grid-area: sidebar2;
